@@ -2932,10 +2932,9 @@ public class mainFrame extends javax.swing.JFrame {
 				String statement = "";
 				if(checkInt(searchField.getText()))
 					statement = "select * from inventory WHERE itemId = " + searchField.getText();
-				else{
+				else
 					statement = "select * from inventory WHERE itemName LIKE \"%" + searchField.getText()+"%\"";
-					System.out.println(statement);
-				}
+				
 				filljTable1(statement);
 			}
     }//GEN-LAST:event_searchFieldKeyPressed
